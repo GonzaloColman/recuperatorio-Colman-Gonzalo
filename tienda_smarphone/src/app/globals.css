@@ -1,33 +1,17 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/*CSS de pagina 1*/
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/*encabezado*/
+header {
+  background: rgb(135, 56, 155);
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  /*cuando baje la pagina se mantiene la barra*/
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Pie de pagina */
+.piePagina {
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(112, 100, 99);
 }
