@@ -1,15 +1,19 @@
-/*CSS de pagina 1*/
-
-/*encabezado*/
 header {
+  /*encabezado*/
   background: rgb(135, 56, 155);
   width: 100%;
   position: fixed;
-  z-index: 100;
   /*cuando baje la pagina se mantiene la barra*/
+  z-index: 100;
 }
-/* Pie de pagina */
+
+.lista {
+  margin-top: 100px;
+  background-color: rgba(243, 243, 243, 0.952);
+}
+
 footer {
+  /* Pie de pagina */
   bottom: 0;
   width: 100%;
   height: 60px;
