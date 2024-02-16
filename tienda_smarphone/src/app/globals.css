@@ -1,4 +1,4 @@
-header {
+.titulo {
   /*encabezado*/
   background: rgb(135, 56, 155);
   width: 100%;
@@ -8,11 +8,11 @@ header {
 }
 
 .lista {
-  margin-top: 100px;
+
   background-color: rgba(243, 243, 243, 0.952);
 }
 
-footer {
+footer {  margin-top: 100px;
   /* Pie de pagina */
   bottom: 0;
   width: 100%;
