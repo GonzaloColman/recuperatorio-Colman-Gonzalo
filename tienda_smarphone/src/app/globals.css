@@ -7,12 +7,57 @@
   z-index: 100;
 }
 
-.lista {
+.cuerpo {
+  max-width: 1215px;
+  /*ancho maximo*/
+  padding-left: 10px;
+  padding-right: 28px;
+  /*Añade relleno a los lados*/
+  width: 100%;
+  /*Establece el ancho del elemento al 100% del contenedor, pero no excederá los 1215px*/
+}
 
+/* Estilo para el contenedor del menú */
+.menu {
+  position: fixed;
+  /* Fija el menú a una posición */
+  left: 0;
+  /* Alinea el menú a la izquierda de la página */
+  top: 0;
+  /* Alinea el menú a la parte superior de la página */
+  width: 200px;
+  /* Ancho del menú */
+  height: 100%;
+  /* Altura del menú */
+  background-color: #333;
+  /* Color de fondo del menú */
+  overflow: auto;
+  /* Agrega barras de desplazamiento si el contenido es más grande que el contenedor */
+}
+
+/* Estilo para los elementos del menú */
+.menu a {
+  display: block;
+  /* Hace que los enlaces se muestren como bloques, llenando todo el ancho del contenedor del menú */
+  color: white;
+  /* Color del texto de los enlaces */
+  padding: 10px;
+  /* Espacio alrededor del texto de los enlaces */
+  text-decoration: none;
+  /* Elimina el subrayado de los enlaces */
+}
+
+/* Cambia el color de fondo al pasar el mouse sobre los elementos del menú */
+.menu a:hover {
+  background-color: #111;
+}
+
+.lista {
   background-color: rgba(243, 243, 243, 0.952);
 }
 
-footer {  margin-top: 100px;
+footer {
+  margin-top: 100px;
   /* Pie de pagina */
   bottom: 0;
   width: 100%;
