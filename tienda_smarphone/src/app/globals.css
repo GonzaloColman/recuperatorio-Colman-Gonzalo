@@ -2,19 +2,21 @@
   /*encabezado*/
   background: rgb(135, 56, 155);
   width: 100%;
-  /*cuando baje la pagina se mantiene la barra*/
   z-index: 100;
   padding: 10px;
+  padding-left: 80px;
+}
+
+.color {
+  background-color: rgba(243, 243, 243, 0.952);
 }
 
 .cuerpo {
-  max-width: 1215px;
-  /*ancho maximo*/
-  padding-left: 30px;
-  padding-right: 28px;
+  width: 100%;
+  padding-left: 80px;
+  padding-right: 30px;
   /*Añade relleno a los lados*/
   width: 100%;
-  /*Establece el ancho del elemento al 100% del contenedor, pero no excederá los 1215px*/
   background-color: rgba(243, 243, 243, 0.952);
   display: flex;
 }
