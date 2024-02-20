@@ -8,10 +8,16 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 export default function Home() {
   return (
     <main>
-      <Encabezado/>
-      <MenuLateral/>
-      <Lista/>
-      <PieDePagina/>
+      <div>
+        <Encabezado />
+      </div>
+      <div className="cuerpo">
+        <MenuLateral />
+        <Lista />
+      </div>
+      <div>
+        <PieDePagina />
+      </div>
     </main>
   );
 }

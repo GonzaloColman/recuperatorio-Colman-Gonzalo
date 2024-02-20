@@ -2,44 +2,37 @@
   /*encabezado*/
   background: rgb(135, 56, 155);
   width: 100%;
-  position: fixed;
   /*cuando baje la pagina se mantiene la barra*/
   z-index: 100;
+  padding: 10px;
 }
 
 .cuerpo {
   max-width: 1215px;
   /*ancho maximo*/
-  padding-left: 10px;
+  padding-left: 30px;
   padding-right: 28px;
   /*Añade relleno a los lados*/
   width: 100%;
   /*Establece el ancho del elemento al 100% del contenedor, pero no excederá los 1215px*/
+  background-color: rgba(243, 243, 243, 0.952);
+  display: flex;
 }
 
 /* Estilo para el contenedor del menú */
 .menu {
-  position: fixed;
-  /* Fija el menú a una posición */
   left: 0;
-  /* Alinea el menú a la izquierda de la página */
-  top: 0;
-  /* Alinea el menú a la parte superior de la página */
   width: 200px;
-  /* Ancho del menú */
   height: 100%;
-  /* Altura del menú */
-  background-color: #333;
-  /* Color de fondo del menú */
+  background-color: rgba(243, 243, 243, 0.952);
   overflow: auto;
-  /* Agrega barras de desplazamiento si el contenido es más grande que el contenedor */
 }
 
 /* Estilo para los elementos del menú */
 .menu a {
   display: block;
   /* Hace que los enlaces se muestren como bloques, llenando todo el ancho del contenedor del menú */
-  color: white;
+  background-color: rgba(243, 243, 243, 0.952);
   /* Color del texto de los enlaces */
   padding: 10px;
   /* Espacio alrededor del texto de los enlaces */
@@ -49,15 +42,16 @@
 
 /* Cambia el color de fondo al pasar el mouse sobre los elementos del menú */
 .menu a:hover {
-  background-color: #111;
+  background-color: #dfabdf;
 }
 
 .lista {
+  margin-left: 200px;
+  display: flex;
   background-color: rgba(243, 243, 243, 0.952);
 }
 
 footer {
-  margin-top: 100px;
   /* Pie de pagina */
   bottom: 0;
   width: 100%;
