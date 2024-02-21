@@ -1,11 +1,12 @@
+import React from 'react';
 import Card from 'react-bootstrap/Card';
 import Celu1 from '../../../../public/celu1.webp';
 
 export const ListaVisual = () => {
 	return (
-		<Card style={{ width: '36rem', display: 'flex', flexDirection: 'row' }}>
-			<Card.Img variant="top" src={Celu1.src} style={{ width: '20%' }} />
-			<div style={{ width: '100%' }}>
+		<Card>
+			<Card.Img variant="top" src={Celu1.src}/>
+			<div>
 				<Card.Body>
 					<Card.Title>Xiaomi Redmi Note 10</Card.Title>
 					<Card.Text>
@@ -22,3 +23,4 @@ export const ListaVisual = () => {
 		</Card>
 	);
 }
+
