@@ -1,66 +1,84 @@
-.titulo {
-  /*encabezado*/
-  background: rgb(135, 56, 155);
-  width: 100%;
-  z-index: 100;
-  padding: 10px;
-  padding-left: 80px;
+	/*encabezado*/
+  .titulo {
+	background: rgb(135, 56, 155); /*agrego color*/
+	width: 100%;/* hago que ocupe el 100% de la pagina a lo ancho*/
+	z-index: 100;
+	padding: 10px;/*distancia en el texto*/
+	padding-left: 80px;/*distancia en borde de la pagina*/
 }
 
 .color {
-  background-color: rgba(243, 243, 243, 0.952);
+	background-color: rgba(243, 243, 243, 0.952);/*agrego color a todo el cuerpo de la pagina*/
 }
 
 .cuerpo {
-  width: 100%;
-  padding-left: 80px;
-  padding-right: 30px;
-  background-color: rgba(243, 243, 243, 0.952);
-  display: flex;
+	width: 100%;/* hago que ocupe el 100% de la pagina a lo ancho*/
+  /*a continuacion distancia entre los margenes*/
+	padding-left: 80px;
+	padding-right: 30px;
+	/*background-color: rgba(243, 243, 243, 0.952);*/
+	display: flex;/**/
 }
 
-/* Estilo para el contenedor del menú */
+/* Estilo para el contenedor del menú lateral */
 .menu {
-  left: 0;
-  width: 200px;
-  height: 100%;
-  background-color: rgba(243, 243, 243, 0.952);
-  overflow: auto;
+	left: 0;
+	width: 200px;
+	height: 100%;
+	background-color: rgba(243, 243, 243, 0.952);
+	overflow: auto;
 }
 
 /* Estilo para los elementos del menú */
 .menu a {
-  display: block;
-  /* Hace que los enlaces se muestren como bloques, llenando todo el ancho del contenedor del menú */
-  background-color: rgba(243, 243, 243, 0.952);
-  /* Color del texto de los enlaces */
-  padding: 10px;
-  /* Espacio alrededor del texto de los enlaces */
-  text-decoration: none;
-  /* Elimina el subrayado de los enlaces */
+	display: block;
+	/* Hace que los enlaces se muestren como bloques, llenando todo el ancho del contenedor del menú */
+	background-color: rgba(243, 243, 243, 0.952);
+	/* Color del texto de los enlaces */
+	padding: 10px;
+	/* Espacio alrededor del texto de los enlaces */
+	text-decoration: none;
+	/* Elimina el subrayado de los enlaces */
 }
 
 /* Cambia el color de fondo al pasar el mouse sobre los elementos del menú */
 .menu a:hover {
-  background-color: #dfabdf;
+	background-color: #dfabdf;
 }
 
+/*margen  para darle posicion en el body y color*/
 .lista {
-  margin-left: 200px;
-  background-color: rgba(243, 243, 243, 0.952);
+	margin-left: 200px;
+	background-color: rgba(243, 243, 243, 0.952);
 }
-
+/*para hacer que las tarjetas mostradas se vean en orden*/
 .flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
+/* Tarjeta */
+.card-container {
+	display: flex;
+	flex-direction: row;
+	width: 36rem;
+}
+
+.card-image {
+	width: 12rem;
+}
+
+.card-content {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
 
 footer {
-  /* Pie de pagina */
-  bottom: 0;
-  width: 100%;
-  height: 60px;
-  background-color: rgb(189, 101, 93);
+	/* Pie de pagina */
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: rgb(189, 101, 93);
 }
