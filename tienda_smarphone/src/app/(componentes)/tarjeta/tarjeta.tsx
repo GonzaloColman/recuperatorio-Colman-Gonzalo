@@ -1,8 +1,8 @@
-"user client"
+"use client"
 import React from 'react';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
-import Celu from '../../../../public/celu1.webp';
+import Celu from '../../../../public/ListaSmartphone/celu1.webp'
 
 
 export const Targeta = () => {
@@ -11,10 +11,9 @@ export const Targeta = () => {
 			<Card.Img className="card-image" variant="top" src={Celu.src} />
 			<div className="card-content">
 				<Card.Body>
-					<Card.Title>Card Title</Card.Title>
+					<Card.Title>Xiaomi Redmi Note 10s 6gb/128gb Gris</Card.Title>
 					<Card.Text>
-						Some quick example text to build on the card title and make up the
-						bulk of the cards content.
+          $413.197
 					</Card.Text>
 				</Card.Body>
 				<ListGroup className="list-group-flush">

@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-import Celu1 from '../../../../public/celu1.webp';
+import Celu1 from '../../../../public/ListaSmartphone/celu1.webp';
 /* a continuacion es la parte visual de como se vera la targeta en la lista */
 export const ListaVisual = () => {
 	return (

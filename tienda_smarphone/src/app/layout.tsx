@@ -7,7 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ApuPhone",
+  title: "CeluPhone",
   description: "Tienda de smartphone",
 };
 
