@@ -1,28 +1,77 @@
-import React from 'react';
+"use client"
+import { useState } from 'react';
+import Image from 'next/image'
+import { DataCelular } from '../../../../public/listaSmartphone';
 import Card from 'react-bootstrap/Card';
-import Celu1 from '../../../../public/ListaSmartphone/celu1.webp';
-/* a continuacion es la parte visual de como se vera la targeta en la lista */
-export const ListaVisual = () => {
+interface Celular {
+	id: string;
+	Nombre: string;
+	Marca: string;
+	Imagen1: any;
+	Imagen2: any;
+	Imagen3: any;
+	Imagen4: any;
+	Precio: string;
+	Almacenamiento: string;
+	SistemaOp: string;
+	CamaraInf: string;
+	Camara: string;
+	Bateria: string;
+	BateriaInf: string;
+	Caracteristica: string;
+}
+
+export function Tarjeta({ Nombre, Marca, Imagen1, Precio, Almacenamiento, SistemaOp, CamaraInf, Camara, Bateria, BateriaInf, Caracteristica }: Celular) {
 	return (
-		<Card>
-			{/* una tarjeta donde ira una foto y la informacion basica */}
-			<Card.Img variant="top" src={Celu1.src} />
-			{/*agrega una imagen y la posiciona arriba  */}
-			<div>
-				<Card.Body>{/* informacion que ira en el cuerpo de la targeta */}
-					<Card.Title>Xiaomi Redmi Note 10</Card.Title>
-					<Card.Text>
-						$450.000
-					</Card.Text>
-					<Card.Text>
-						6 cuotas sin interes
-					</Card.Text>
-					<Card.Text>
-						Envio Gratis
-					</Card.Text>
-				</Card.Body>
-			</div>
+		<Card style={{ width: '18rem' }}>
+			<Image
+				loader={() => Imagen1}
+				unoptimized={true}
+				src={Imagen1} alt={''} width='120' height='200'
+			/>
+			<Card.Body>
+				<Card.Title>{Nombre}</Card.Title>
+				<Card.Text>
+					Precio:{Precio}
+				</Card.Text>
+			</Card.Body>
 		</Card>
 	);
 }
 
+interface ListaDeTarjetasProps {
+	datosTarjetas: Celular[];
+}
+
+function ListaDeTarjetas({ datosTarjetas }: ListaDeTarjetasProps) {
+  return (
+    <div id="listadoTarjetas" style={{ display: 'flex', flexWrap: 'wrap' }}>
+      {datosTarjetas.map((tarjeta) => (
+        <Tarjeta key={tarjeta.id} {...tarjeta} />
+      ))}
+    </div>
+  );
+}
+
+
+
+function App() {
+
+	const [tarjetas] = useState<Celular[]>(DataCelular);
+
+	return (
+		<div>
+			<ListaDeTarjetas datosTarjetas={tarjetas} />
+		</div>
+	);
+}
+
+interface ListaVisualProps {
+	Celular: Celular;
+}
+
+export const ListaVisual = ({ Celular }: ListaVisualProps) => {
+	return (
+		App()
+	)
+}

@@ -5,7 +5,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import Celu from '../../../../public/ListaSmartphone/celu1.webp'
 
 
-export const Targeta = () => {
+export const Tarjeta = () => {
 	return (
 		<Card className="card-container">
 			<Card.Img className="card-image" variant="top" src={Celu.src} />

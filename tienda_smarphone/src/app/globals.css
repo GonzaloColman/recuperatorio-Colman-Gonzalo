@@ -24,9 +24,9 @@
 		padding-left: 80px;
 		padding-right: 30px;
 		display: flex;
-		/**/
+    flex-direction: row;
 	}
-
+  
 	/* Estilo para el contenedor del menú lateral */
 	.menu {
 		left: 0;
@@ -55,7 +55,7 @@
 
 	/*margen  para darle posicion en el body y color*/
 	.lista {
-		margin-left: 200px;
+    width: 100%;
 		background-color: rgba(243, 243, 243, 0.952);
 	}
 
