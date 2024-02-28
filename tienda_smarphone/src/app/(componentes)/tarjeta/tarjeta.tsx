@@ -1,25 +1,33 @@
 "use client"
-import React from 'react';
+import React, { useContext } from 'react';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
-import Celu from '../../../../public/ListaSmartphone/celu1.webp'
+import { Celular } from '@/app/interfaces/celular';
+import { IdContext } from '@/app/lista/idLista';
 
+export const Tarjeta = (props: Celular) => {
+	const { Nombre, Marca, Imagen1, Imagen2, Imagen3, Imagen4, Precio, Almacenamiento, SistemaOp, CamaraInf, Camara, Bateria, BateriaInf, Caracteristica } = props;
+	const { id, setId } = useContext(IdContext); // Usa IdContext aquí
 
-export const Tarjeta = () => {
 	return (
-		<Card className="card-container">
-			<Card.Img className="card-image" variant="top" src={Celu.src} />
+		<Card className="card-container" onClick={() => setId(props.id)}>
+			<Card.Img className="card-image" variant="top" src={Imagen1} />
 			<div className="card-content">
 				<Card.Body>
-					<Card.Title>Xiaomi Redmi Note 10s 6gb/128gb Gris</Card.Title>
+					<Card.Title>{Nombre}</Card.Title>
 					<Card.Text>
-          $413.197
+						Precio: {Precio}
 					</Card.Text>
 				</Card.Body>
 				<ListGroup className="list-group-flush">
-					<ListGroup.Item>Cras justo odio</ListGroup.Item>
-					<ListGroup.Item>Dapibus ac facilisis in</ListGroup.Item>
-					<ListGroup.Item>Vestibulum at eros</ListGroup.Item>
+					<ListGroup.Item>Marca: {Marca}</ListGroup.Item>
+					<ListGroup.Item>Almacenamiento: {Almacenamiento}</ListGroup.Item>
+					<ListGroup.Item>Sistema Operativo: {SistemaOp}</ListGroup.Item>
+					<ListGroup.Item>Información de la cámara: {CamaraInf}</ListGroup.Item>
+					<ListGroup.Item>Cámara: {Camara}</ListGroup.Item>
+					<ListGroup.Item>Batería: {Bateria}</ListGroup.Item>
+					<ListGroup.Item>Información de la batería: {BateriaInf}</ListGroup.Item>
+					<ListGroup.Item>Características: {Caracteristica}</ListGroup.Item>
 				</ListGroup>
 				<Card.Body>
 					<Card.Link href="#">Card Link</Card.Link>

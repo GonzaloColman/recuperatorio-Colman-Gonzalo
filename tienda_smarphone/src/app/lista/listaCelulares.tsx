@@ -1,24 +1,29 @@
 "use client"
-import React from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { Tarjeta } from '../(componentes)/visualLista/visualLista';
-import { useRouter } from 'next/navigation';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { VisualLista } from '../(componentes)/visualLista/visualLista';
 import { DataCelular } from '../../../public/listaSmartphone';
+import { useRouter } from 'next/navigation';
+import { IdContext, IdLista } from './idLista';
 
-export const Lista = () => {
+export const ListaCelulares = () => {
 	const router = useRouter();
 
-	const goPage = () => {
-		router.push("/page2")
+	const goPage = (id: string) => {
+		router.push(`/page2/${id}`)
 	}
 
 	return (
-		<div className='lista flex-container '>
-			{DataCelular.map(Celular => (
-				<a onClick={goPage} key={Celular.id}>
-					<Tarjeta {...Celular} />
-				</a>
-			))}
-		</div>
+		<IdLista>
+			<div className='lista flex-container '>
+				{DataCelular.map(Celular => (
+					<a onClick={() => goPage(Celular.id)} key={Celular.id}>
+						<VisualLista {...Celular} />
+					</a>
+				))}
+			</div>
+		</IdLista>
 	)
 }
+
+
