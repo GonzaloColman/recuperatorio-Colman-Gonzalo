@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { IdContext } from '@/app/lista/idLista'; // Importa IdContext en lugar de IdLista
+import { IdContext } from '@/app/context/SecionContext';
 import Image from 'next/image';
 import Card from 'react-bootstrap/Card';
 import { Celular } from '@/app/interfaces/celular';
