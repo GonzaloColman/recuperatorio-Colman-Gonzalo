@@ -10,7 +10,7 @@ export const ListaCelulares = () => {
 	const router = useRouter();
 
 	const goPage = (id: string) => {
-		router.push(`/venta/${id}`)
+		router.push(`/pages/paginaVenta/${id}`)
 	}
 
 	return (

@@ -3,7 +3,7 @@ import React, { useContext } from 'react';
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { Celular } from '@/app/interfaces/celular';
-import { IdContext } from '@/app/lista/idLista';
+import { IdContext } from '@/app/context/SecionContext';
 
 export const Tarjeta = (props: Celular) => {
 	const { Nombre, Marca, Imagen1, Imagen2, Imagen3, Imagen4, Precio, Almacenamiento, SistemaOp, CamaraInf, Camara, Bateria, BateriaInf, Caracteristica } = props;

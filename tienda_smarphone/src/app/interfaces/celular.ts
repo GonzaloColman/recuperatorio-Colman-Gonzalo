@@ -1,4 +1,5 @@
 export interface Celular {
+  onClick?: () => void;
 	id: string;
 	Nombre: string;
 	Marca: string;
