@@ -1,3 +1,4 @@
+"use client"
 import { Encabezado } from "../../encabezados_PieDePagina/encabezado";
 import { ListaCelulares } from "../../lista/listaCelulares";
 import { PieDePagina } from "../../encabezados_PieDePagina/pieDePagina";
